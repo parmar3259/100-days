@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalog-Z Contact page</title>
+    <title>Pradeep Balaji Enterprises</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link rel="stylesheet" href="css/templatemo-style.css">
@@ -28,7 +28,7 @@ https://templatemo.com/tm-556-catalog-z
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <i class=""></i>
-                Pradeep Balaji
+                Pradeep Balaji Enterprises
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
@@ -36,16 +36,16 @@ https://templatemo.com/tm-556-catalog-z
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link nav-link-1" href="index.html">Photos</a>
+                    <a class="nav-link nav-link-1" href="index.php">Photos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-2" href="videos.html">Videos</a>
+                    <a class="nav-link nav-link-2" href="videos.php">Videos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-3" href="about.html">About</a>
+                    <a class="nav-link nav-link-3" href="about.php">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-4 active" aria-current="page" href="contact.html">Contact</a>
+                    <a class="nav-link nav-link-4 active" aria-current="page" href="contact.php">Contact</a>
                 </li>
             </ul>
             </div>
@@ -66,12 +66,8 @@ https://templatemo.com/tm-556-catalog-z
                         <input type="email" name="email" class="form-control rounded-0" placeholder="Email" required />
                     </div>
                     <div class="form-group">
-                        <select class="form-control" id="contact-select" name="inquiry">
-                            <option value="-">Subject</option>
-                            <option value="sales">Sales &amp; Marketing</option>
-                            <option value="creative">Creative Design</option>
-                            <option value="uiux">UI / UX</option>
-                        </select>
+                    <input type="subject" name="subject" class="form-control rounded-0" placeholder="Subject" required />
+
                     </div>
                     <div class="form-group">
                         <textarea rows="8" name="message" class="form-control rounded-0" placeholder="Message" required=></textarea>
@@ -85,11 +81,9 @@ https://templatemo.com/tm-556-catalog-z
             <div class="col-lg-4 col-12 mb-5">
                 <div class="tm-address-col">
                     <h2 class="tm-text-primary mb-5">Our Address</h2>
-                    <p class="tm-mb-50">Quisque eleifend mi et nisi eleifend pretium. Duis porttitor accumsan arcu id rhoncus. Praesent fermentum venenatis ipsum, eget vestibulum purus. </p>
-                    <p class="tm-mb-50">Nulla ut scelerisque elit, in fermentum ante. Aliquam congue mattis erat, eget iaculis enim posuere nec. Quisque risus turpis, tempus in iaculis.</p>
+                    <p class="tm-mb-50"><strong>फड़ बाजार, जल गट्टा हनुमान मंदिर के पीछे की सड़क, Phad Bazar, road, behind Jal gatta hanuman mandir</strong></p>
                     <address class="tm-text-gray tm-mb-50">
-                        120-240 Fusce eleifend varius tempus<br>
-                        Duis consectetur at ligula 10660
+                    Bikaner, Rajasthan 334001<br>
                     </address>
                     <ul class="tm-contacts">
                         <li>
@@ -107,7 +101,7 @@ https://templatemo.com/tm-556-catalog-z
                         <li>
                             <a href="#" class="tm-text-gray">
                                 <i class="fas fa-globe"></i>
-                                URL: www.company.com
+                                URL: www.pradeepbalaji.live
                             </a>
                         </li>
                     </ul>
@@ -119,14 +113,15 @@ https://templatemo.com/tm-556-catalog-z
                 <div class="mapouter mb-4">
                     <div class="gmap-canvas">
                         <iframe width="100%" height="520" id="gmap-canvas"
-                            src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        
+                            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Pradeep+Balaji+Enterprises"
                             frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                     </div>
                 </div>               
             </div>
         </div>
-        <div class="row tm-mb-74 tm-people-row">
-            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
+        <div style="padding:25px;" class="row tm-mb-74 tm-people-row">
+            <div class="col-lg-5 col-md-6 col-sm-8 col-12 mb-6">
                 <img src="img/people-1.jpg" alt="Image" class="mb-4 img-fluid">
                 <h2 class="tm-text-primary mb-4">Ryan White</h2>
                 <h3 class="tm-text-secondary h5 mb-4">Chief Executive Officer</h3>
@@ -139,7 +134,7 @@ https://templatemo.com/tm-556-catalog-z
                     <li><a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a></li>
                 </ul>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
+            <div class="col-lg-5 col-md-6 col-sm-8 col-12 mb-6">
                 <img src="img/people-2.jpg" alt="Image" class="mb-4 img-fluid">
                 <h2 class="tm-text-primary mb-4">Catherine Pinky</h2>
                 <h3 class="tm-text-secondary h5 mb-4">Chief Marketing Officer</h3>
@@ -152,41 +147,18 @@ https://templatemo.com/tm-556-catalog-z
                     <li><a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a></li>
                 </ul>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
-                <img src="img/people-3.jpg" alt="Image" class="mb-4 img-fluid">
-                <h2 class="tm-text-primary mb-4">Johnny Brief</h2>
-                <h3 class="tm-text-secondary h5 mb-4">Accounting Executive</h3>
-                <p class="mb-4">
-                    Sed faucibus nec velit finibus accumsan. Sed varius augue et leo pharetra, in varius lacus eleifend. Quisque ut eleifend lacus.
-                </p>
-                <ul class="tm-social pl-0 mb-0">
-                    <li><a href="https://facebook.com"><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a></li>
-                </ul>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
-                <img src="img/people-4.jpg" alt="Image" class="mb-4 img-fluid">
-                <h2 class="tm-text-primary mb-4">George Nelson</h2>
-                <h3 class="tm-text-secondary h5 mb-4">Creative Art Director #C69</h3>
-                <p class="mb-4">
-                    Nunc convallis facilisis congue. Curabitur gravida rutrum justo sed pulvinar. Pellentesque ac ante in erat bibendum dignissim.
-                </p>
-                <ul class="tm-social pl-0 mb-0">
-                    <li><a href="https://facebook.com"><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a></li>
-                </ul>
-            </div>
-        </div>
     </div> <!-- container-fluid, tm-container-content -->
 
     <footer class="tm-bg-gray pt-5 pb-3 tm-text-gray tm-footer">
         <div class="container-fluid tm-container-small">
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-12 px-5 mb-5">
-                    <h3 class="tm-text-primary mb-4 tm-footer-title">About Catalog-Z</h3>
-                    <p>Catalog-Z is free Bootstrap 5 Alpha 2 HTML Template for video and photo websites. You can freely use this TemplateMo layout for a front-end integration with any kind of CMS website.</p>
+                    <h3 class="tm-text-primary mb-4 tm-footer-title">About Pradeep Balaji Enterprises</h3>
+                    <p>Our company specializes in providing Fast Moving Consumer Goods (FMCG) products for the B2B category at wholesale prices<br>
+                    Our product range covers a wide variety of FMCG products such as Tea, Oil, Ghee, Soap, and more.
+                
+                </p>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
                     <h3 class="tm-text-primary mb-4 tm-footer-title">Our Links</h3>
@@ -199,10 +171,10 @@ https://templatemo.com/tm-556-catalog-z
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
                     <ul class="tm-social-links d-flex justify-content-end pl-0 mb-5">
-                        <li class="mb-2"><a href="https://facebook.com"><i class="fab fa-facebook"></i></a></li>
-                        <li class="mb-2"><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
-                        <li class="mb-2"><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
-                        <li class="mb-2"><a href="https://pinterest.com"><i class="fab fa-pinterest"></i></a></li>
+                        <li class="mb-2"><a href=""><i class="fab fa-facebook"></i></a></li>
+                        <li class="mb-2"><a href=""></a><i class="fab fa-twitter"></i></a></li>
+                        <li class="mb-2"><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li class="mb-2"><a href=""><i class="fab fa-pinterest"></i></a></li>
                     </ul>
                     <a href="#" class="tm-text-gray text-right d-block mb-2">Terms of Use</a>
                     <a href="#" class="tm-text-gray text-right d-block">Privacy Policy</a>
@@ -210,10 +182,10 @@ https://templatemo.com/tm-556-catalog-z
             </div>
             <div class="row">
                 <div class="col-lg-8 col-md-7 col-12 px-5 mb-3">
-                    Copyright 2020 Catalog-Z Company. All rights reserved.
+                    Copyright 2023 pradeep Balaji Enterprises Company. All rights reserved.
                 </div>
                 <div class="col-lg-4 col-md-5 col-12 px-5 text-right">
-                    Designed by <a href="https://templatemo.com" class="tm-text-gray" rel="sponsored" target="_parent">TemplateMo</a>
+                    Designed by <a href="#" class="tm-text-gray" rel="sponsored" target="_parent">Hardik Parmar</a>
                 </div>
             </div>
         </div>
