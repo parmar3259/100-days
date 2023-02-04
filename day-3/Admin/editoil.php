@@ -1,7 +1,6 @@
 <?php
 include 'session.php';
 include('../database/connection.php');
-
 ?>
 
 
@@ -94,48 +93,64 @@ position:absolute;
         <!--Grid column-->
         <div class="col-md-12 mb-8">
 
-         <!-- Add button -->
-         <div class="d-flex justify-content-end mb-3">
-  <a href="insertoil.php" class="btn btn-success" id="addBtn">Add New</a>
-</div>
 
-<?php
-$query = "SELECT * FROM oil";
-$result = mysqli_query($conn, $query);
+        
+        <?php
+
+  if (isset($_GET['id'])) {
+    $id = $_GET['id'];
+
+    $query = "SELECT * FROM oil WHERE ID = $id";
+    $result = mysqli_query($conn, $query);
+    $product = mysqli_fetch_assoc($result);
+   
+    
+  }
 ?>
 
-<table class="table">
-  <thead>
-    <tr>
-      <th>ID</th>
-      <th>Name</th>
-      <th>Quality</th>
-      <th>Rate</th>
-      <th>Description</th>
-      <th>Date Stamp</th>
-      <th>Image</th>
-      <th>Action</th>
-    </tr>
-  </thead>
-  <tbody>
-    <?php while ($row = mysqli_fetch_assoc($result)): ?>
-      <tr>
-        <td><?php echo $row['ID']; ?></td>
-        <td><?php echo $row['name']; ?></td>
-        <td><?php echo $row['quality']; ?></td>
-        <td><?php echo $row['rate']; ?></td>
-        <td><?php echo $row['description']; ?></td>
-        <td><?php echo $row['date_stamp']; ?></td>
-        <td><?php echo '<img src="data:image/jpeg;base64,'.base64_encode($row['image']).'" height="100" width="100"/>'; ?></td>
-        <td>
-        <a href="editoil.php?id=<?php echo $row['ID']; ?>" class="btn btn-warning">Edit</a>
-        <a href="deleteoil.php?id=<?php echo $row['ID']; ?>" class="btn btn-danger">Delete</a>
-      </td>
 
-      </tr>
-    <?php endwhile; ?>
-  </tbody>
-</table>
+         <!-- Add button -->
+         <form action="" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="id" value="<?php echo $product['ID']; ?>">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" name="name" value="<?php echo $product['name']; ?>" required>
+        </div>
+        <div class="form-group">
+          <label for="quality">Quality</label>
+          <input type="text" class="form-control" id="quality" name="quality" value="<?php echo $product['quality']; ?>" required>
+        </div>
+        <div class="form-group">
+          <label for="rate">Rate</label>
+          <input type="text" class="form-control" id="rate" name="rate" value="<?php echo $product['rate']; ?>" required>
+        </div>
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea class="form-control" id="description" name="description" required><?php echo $product['description']; ?></textarea>
+        </div>
+        <div class="form-group">
+          <label for="image">Image</label>
+          <input type="file" class="form-control-file" id="image" name="image">
+        </div>
+        <button type="submit" class="btn btn-primary">Update</button>
+      </form>
+<!-- PHP code to insert the form data into the database -->
+<?php
+  if (isset($_POST['submit'])) {
+    $name = $_POST['name'];
+    $quality = $_POST['quality'];
+    $rate = $_POST['rate'];
+    $description = $_POST['description'];
+    $image = addslashes(file_get_contents($_FILES['image']['tmp_name']));
+  
+    $query = "INSERT INTO oil (name, quality, rate, description, image) VALUES ('$name', '$quality', '$rate', '$description', '$image')";
+    if (mysqli_query($conn, $query)) {
+      echo '<div class="alert alert-success" role="alert">New oil record added successfully!</div>';
+    } else {
+      echo '<div class="alert alert-danger" role="alert">Error: ' . mysqli_error($conn) . '</div>';
+    }
+  }
+?>
 
         </div>
 

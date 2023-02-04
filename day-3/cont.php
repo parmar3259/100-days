@@ -12,6 +12,6 @@ if (mysqli_connect_errno()) {
     exit();
 }
 else {
-    echo 'successfull';
+    // echo 'successfull';
 }
 ?>
