@@ -129,7 +129,13 @@ $result = mysqli_query($conn, $query);
         <td><?php echo '<img src="data:image/jpeg;base64,'.base64_encode($row['image']).'" height="100" width="100"/>'; ?></td>
         <td>
         <a href="editoil.php?id=<?php echo $row['ID']; ?>" class="btn btn-warning">Edit</a>
-        <a href="deleteoil.php?id=<?php echo $row['ID']; ?>" class="btn btn-danger">Delete</a>
+        <form action="deleteoil.php" method="post">
+  <input type="hidden" name="id" value="<?php echo $row['ID']; ?>">
+  <input type="submit" value="Delete" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this record?');">
+</form>
+
+
+
       </td>
 
       </tr>
