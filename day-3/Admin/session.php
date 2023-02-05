@@ -2,8 +2,10 @@
     
     session_start();
 
-    if (!isset($_SESSION['username'])) {
-        header("Location: admin.php");
-        exit;
-      }
+    if(!isset($_SESSION["user"]))
+    {
+        echo "<script> location.replace('../index.php');</script>";
+        die();
+    }
+    
    ?>

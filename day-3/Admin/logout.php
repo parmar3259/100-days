@@ -1,6 +1,7 @@
 <?php
-  session_start();
-  session_destroy();
-  header("Location: admin.php");
-  exit;
+   session_start();
+   
+   if(session_destroy()) {
+      header("Location: index.php");
+   }
 ?>
