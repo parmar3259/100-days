@@ -1,0 +1,185 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "title": "Delhi",
+            "icon": "marker.png",
+            "infoWindow": "There is some important info here",
+            "infoWindowOpenOnLoad": false,
+            "properties": {
+                "callsign": "DEL",
+                "airplane": "A320",
+                "departure": "VIDP",
+                "arrival": "VABB",
+                "pos": "AIR"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [28.6139, 77.2090]
+            }
+        },
+        {
+            "type": "Feature",
+            "title": "Mumbai",
+            "icon": "marker.png",
+            "infoWindow": "There is some important info here",
+            "infoWindowOpenOnLoad": false,
+            "properties": {
+                "callsign": "BOM",
+                "airplane": "B737",
+                "departure": "VABB",
+                "arrival": "VIDP",
+                "pos": "GND"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [19.0760, 72.8777]
+            }
+        },
+        {
+            "type": "Feature",
+            "title": "Bangalore",
+            "icon": "marker.png",
+            "infoWindow": "There is some important info here",
+            "infoWindowOpenOnLoad": false,
+            "properties": {
+                "callsign": "BLR",
+                "airplane": "A21N",
+                "departure": "VOBL",
+                "arrival": "VIDP",
+                "pos": "GND"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [12.9716, 77.5946]
+            }
+        },
+        {
+            "type": "Feature",
+            "title": "Chennai",
+            "icon": "marker.png",
+            "infoWindow": "There is some important info here",
+            "infoWindowOpenOnLoad": false,
+            "properties": {
+                "callsign": "MAA",
+                "airplane": "B738",
+                "departure": "VOMM",
+                "arrival": "VIDP",
+                "pos": "AIR"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [13.0827, 80.2707]
+            }
+        },
+        {
+            "type": "Feature",
+            "title": "Kolkata",
+            "icon": "marker.png",
+            "infoWindow": "There is some important info here",
+            "infoWindowOpenOnLoad": false,
+            "properties": {
+                "callsign": "CCU",
+                "airplane": "A320",
+                "departure": "VECC",
+                "arrival": "VIDP",
+                "pos": "GND"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [22.5726, 88.3639]
+            }
+        },
+        {
+            "type": "Feature",
+            "title": "Hyderabad",
+            "icon": "marker.png",
+            "infoWindow": "There is some important info here",
+            "infoWindowOpenOnLoad": false,
+            "properties": {
+                "callsign": "HYD",
+                "airplane": "B737",
+                "departure": "VOHS",
+                "arrival": "VIDP",
+                "pos": "AIR"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [17.3850, 78.4867]
+            }
+        },
+        {
+            "type": "Feature",
+            "title": "Pune",
+            "icon": "marker.png",
+            "infoWindow": "There is some important info here",
+            "infoWindowOpenOnLoad": false,
+            "properties": {
+                "callsign": "PNQ",
+                "airplane": "A21N",
+                "departure": "VAPO",
+                "arrival": "VIDP",
+                "pos": "GND"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [18.5204, 73.8567]
+            }
+        },
+        {
+            "type": "Feature",
+            "title": "Jaipur",
+            "icon": "marker.png",
+            "infoWindow": "There is some important info here",
+            "infoWindowOpenOnLoad": false,
+            "properties": {
+                "callsign": "JAI",
+                "airplane": "B738",
+                "departure": "VIJP",
+                "arrival": "VIDP",
+                "pos": "AIR"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [26.9124, 75.7873]
+            }
+        },
+        {
+            "type": "Feature",
+            "title": "Ahmedabad",
+            "icon": "marker.png",
+            "infoWindow": "There is some important info here",
+            "infoWindowOpenOnLoad": false,
+            "properties": {
+                "callsign": "AMD",
+                "airplane": "A320",
+                "departure": "VAAH",
+                "arrival": "VIDP",
+                "pos": "GND"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [23.0225, 72.5714]
+            }
+        },
+        {
+            "type": "Feature",
+            "title": "Chandigarh",
+            "icon": "marker.png",
+            "infoWindow": "There is some important info here",
+            "infoWindowOpenOnLoad": false,
+            "properties": {
+                "callsign": "IXC",
+                "airplane": "B737",
+                "departure": "VICG",
+                "arrival": "VIDP",
+                "pos": "GND"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [30.7333, 76.7794]
+            }
+        }
+    ]
+}
